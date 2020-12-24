@@ -15,6 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let layout = UICollectionViewFlowLayout()
         let width = UIScreen.main.bounds.size.width
         
+        // 1. Provide the layout with an estimated item size (refer to cell file for next steps)
         layout.estimatedItemSize = CGSize(width: width, height: 10)
         return layout
     }()
