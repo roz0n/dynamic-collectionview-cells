@@ -16,7 +16,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let width = UIScreen.main.bounds.size.width
         
         layout.estimatedItemSize = CGSize(width: width, height: 10)
-        
         return layout
     }()
     
@@ -26,10 +25,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cv = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         cv!.delegate = self
         cv!.dataSource = self
-        cv!.backgroundColor = .blue
+        cv!.backgroundColor = Data.colors["background"]
         cv!.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reuseId)
         
         view.addSubview(cv!)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
 }

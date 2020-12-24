@@ -14,7 +14,6 @@
 		23F4919D259498240013D1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F4919C259498240013D1B1 /* Assets.xcassets */; };
 		23F491A0259498240013D1B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F4919E259498240013D1B1 /* LaunchScreen.storyboard */; };
 		23F491AC25949A760013D1B1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F491AB25949A760013D1B1 /* CollectionViewCell.swift */; };
-		23F491AF2594AB450013D1B1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F491AE2594AB450013D1B1 /* CollectionViewController.swift */; };
 		23F491B82594B4F30013D1B1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F491B72594B4F30013D1B1 /* Data.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		23F4919F259498240013D1B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23F491A1259498240013D1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F491AB25949A760013D1B1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		23F491AE2594AB450013D1B1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		23F491B72594B4F30013D1B1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +68,6 @@
 				23F4919E259498240013D1B1 /* LaunchScreen.storyboard */,
 				23F491A1259498240013D1B1 /* Info.plist */,
 				23F491AB25949A760013D1B1 /* CollectionViewCell.swift */,
-				23F491AE2594AB450013D1B1 /* CollectionViewController.swift */,
 				23F491B72594B4F30013D1B1 /* Data.swift */,
 			);
 			path = DynamicCollectionCells;
@@ -149,7 +146,6 @@
 				23F49198259498210013D1B1 /* ViewController.swift in Sources */,
 				23F491B82594B4F30013D1B1 /* Data.swift in Sources */,
 				23F49194259498210013D1B1 /* AppDelegate.swift in Sources */,
-				23F491AF2594AB450013D1B1 /* CollectionViewController.swift in Sources */,
 				23F491AC25949A760013D1B1 /* CollectionViewCell.swift in Sources */,
 				23F49196259498210013D1B1 /* SceneDelegate.swift in Sources */,
 			);

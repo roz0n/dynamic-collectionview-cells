@@ -10,6 +10,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     static let reuseId = "Cell"
+    
     var text: String? {
         didSet {
             textView.text = text ?? "No data present"
@@ -20,18 +21,18 @@ class CollectionViewCell: UICollectionViewCell {
         let text = UITextView(frame: .zero)
         
         text.translatesAutoresizingMaskIntoConstraints = false
-        text.textColor = .green
-        text.backgroundColor = .yellow
         text.isScrollEnabled = false
-        text.textContainer.maximumNumberOfLines = 0
+        text.textColor = Data.colors["text"]
+        text.backgroundColor = Data.colors["foreground"]
+        text.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         
         return text
     }()
     
     lazy var width: NSLayoutConstraint = {
         let width = contentView.widthAnchor.constraint(equalToConstant: bounds.size.width)
-        width.isActive = true
         
+        width.isActive = true
         return width
     }()
     
@@ -39,8 +40,6 @@ class CollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .red
-        
         prepareViews()
     }
     
@@ -53,7 +52,7 @@ class CollectionViewCell: UICollectionViewCell {
         return contentView.systemLayoutSizeFitting(CGSize(width: targetSize.width, height: 1))
     }
     
-    fileprivate func prepareViews() {
+    private func prepareViews() {
         contentView.addSubview(textView)
         NSLayoutConstraint.activate([
             textView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
